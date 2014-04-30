@@ -8,10 +8,6 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 </head>
 <body>
-@todo
-	1) top screen?
-	2) scrolling of the filters - they do not fit on screen
-	3) site width - ?
 <!-- begin top  -->
 <div class="top">
 
@@ -36,12 +32,109 @@
 				</div>
 			</div>
 			<!-- end header__right -->
+		
+
+
+		<!-- begin search  -->
+		<div class="search">
+			<ul class="search__switcher">
+				<li><a href="#" class="search__switcher1 is-active">Вино</a></li>
+				<li><a href="#" class="search__switcher2">Крепкий алкоголь</a></li>
+			</ul>
+			<div class="search__filters">
+				<!-- begin filter -->
+				<div class="search__filter">
+					<h3 class="search__title">Страна</h3>
+
+					<ul class="search__options">
+						<li><label for="#"><input type="radio" name="" id="">Италия</label></li>
+						<li><label for="#"><input type="radio" name="" id="">Франция</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+					</ul>
+					<a class="search__showall" href='#'>показать все</a>
+				</div>
+				<!-- end filter -->
+
+				<!-- begin filter -->
+				<div class="search__filter">
+					<h3 class="search__title">Регион</h3>
+
+					<ul class="search__options">
+						<li><label for="#"><input type="radio" name="" id="">Бордо</label></li>
+						<li><label for="#"><input type="radio" name="" id="">Долина бла</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Долина бле</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Долина блю</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+					</ul>
+					<a class="search__showall" href='#'>показать все</a>
+				</div>
+				<!-- end filter -->
+
+				<!-- begin filter -->
+				<div class="search__filter">
+					<h3 class="search__title">Категория</h3>
+
+					<ul class="search__categ">
+						<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>белые</span></label></li>
+						<li class="is-hidden"><label for="#"><i class="search__categicon2"></i><input type="radio" name="" id=""><span>Красные</span></label></li>
+						<li><label for="#"><i class="search__categicon3"></i><input type="radio" name="" id=""><span>Розовые</span></label></li>
+						<li class="is-hidden"><label for="#"><i class="search__categicon4"></i><input type="radio" name="" id=""><span>Игристые</span></label></li>
+						<li class="is-hidden"><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Игристые</span></label></li>
+					</ul>
+					<a class="search__showall" href='#'>показать все</a>
+				</div>
+				<!-- end filter -->
+
+				<!-- begin filter -->
+				<div class="search__filter">
+					<h3 class="search__title">Производитель</h3>
+
+					<ul class="search__options">
+						<li><label for="#"><input type="radio" name="" id="">Люсьен</label></li>
+						<li><label for="#"><input type="radio" name="" id="">Лосьон</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Большая Арнаутская</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Парень из соседнего парадного</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+					</ul>
+					<a class="search__showall" href='#'>показать все</a>
+				</div>
+				<!-- end filter -->
+
+				<!-- begin filter -->
+				<div class="search__filter is-last">
+					<h3 class="search__title">Цена</h3>
+
+					<ul class="search__options">
+						<li><label for="#"><input type="radio" name="" id="">0-550</label></li>
+						<li><label for="#"><input type="radio" name="" id="">551-1000</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+						<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+					</ul>
+					<a class="search__showall" href='#'>показать все</a>
+				</div>
+				<!-- end filter -->
+				<div class="search__submit">ПОЛНЫЙ КАТАЛОГ</div>
+			</div>
 		</div>
+		<!-- end search -->
+		</div>
+		<!-- end header in -->
 	</div>
 	<!-- end header -->
 
 	<!-- begin superslider  -->
-	<div class="superslider">
+	<div class="superslider  cycle-slideshow" 
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=2000
+    data-cycle-slides=".superslider__slide"
+    data-cycle-pager=".superslider__pagi"
+     data-cycle-prev=".superslider__prev"
+    data-cycle-next=".superslider__next">
 		<div class="superslider__slides">
 			<!-- begin slide -->
 			<div class="superslider__slide" style="background: url(img/bg.jpg);">
@@ -61,112 +154,52 @@
 			<!-- end slide -->
 		</div>
 		<!-- end slides -->
-		<div class="superslider__next"></div>
-		<div class="superslider__prev"></div>
-		<div class="superslider__playpause"></div>
-		<div class="superslider__pagi"><a href="#"></a><a href="#"></a></div>
+		<div class="superslider__in">
+			<div class="superslider__next"></div>
+			<div class="superslider__prev"></div>
+			<div class="superslider__playpause"></div>
+			<div class="superslider__pagi"><a href="#"></a><a href="#"></a></div>
+		</div>
+		
 	</div>
 	<!-- end superslider -->
 
 	<!-- begin logoslider  -->
-	<div class="logoslider">
-		<div class="logoslider__slides"></div>
+	<div class="logoslider ">
+	<div class="logoslider__in ">
+
+\
+		<div class="logoslider__slides cycle-slideshow"
+
+		data-cycle-fx="carousel"
+     data-cycle-prev=".logoslider__prev"
+    data-cycle-next=".logoslider__next">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+			<img src="img/logo.jpg" alt="">
+		</div>
 		<div class="logoslider__next"></div>
 		<div class="logoslider__prev"></div>
-	</div>
+	</div></div>
 	<!-- end logoslider -->
 
 </div>
 <!-- end top -->
 
 
-<!-- begin search  -->
-<div class="search">
-	<ul class="search__switcher">
-		<li><a href="#" class="is-active">Вино</a></li>
-		<li><a href="#">Крепкий алкоголь</a></li>
-	</ul>
-	<div class="search__filters">
-		<!-- begin filter -->
-		<div class="search__filter">
-			<h3 class="search__title">Страна</h3>
 
-			<ul class="search__options">
-				<li><label for="#"><input type="radio" name="" id="">Италия</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Франция</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Испания</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Чили</label></li>
-				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
-				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
-			</ul>
-			<a class="search__showall" href='#'>показать все</a>
-		</div>
-		<!-- end filter -->
-
-		<!-- begin filter -->
-		<div class="search__filter">
-			<h3 class="search__title">Регион</h3>
-
-			<ul class="search__options">
-				<li><label for="#"><input type="radio" name="" id="">Бордо</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Долина бла</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Долина бле</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Долина блю</label></li>
-				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
-				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
-			</ul>
-			<a class="search__showall" href='#'>показать все</a>
-		</div>
-		<!-- end filter -->
-
-		<!-- begin filter -->
-		<div class="search__filter">
-			<h3 class="search__title">Категория</h3>
-
-			<ul class="search__categ">
-				<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>белые</span></label></li>
-				<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Красные</span></label></li>
-				<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Розовые</span></label></li>
-				<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Игристые</span></label></li>
-				<li class="is-hidden"><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Игристые</span></label></li>
-			</ul>
-			<a class="search__showall" href='#'>показать все</a>
-		</div>
-		<!-- end filter -->
-
-		<!-- begin filter -->
-		<div class="search__filter">
-			<h3 class="search__title">Производитель</h3>
-
-			<ul class="search__options">
-				<li><label for="#"><input type="radio" name="" id="">Люсьен</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Лосьон</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Большая Арнаутская</label></li>
-				<li><label for="#"><input type="radio" name="" id="">Парень из соседнего парадного</label></li>
-				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
-				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
-			</ul>
-			<a class="search__showall" href='#'>показать все</a>
-		</div>
-		<!-- end filter -->
-
-		<!-- begin filter -->
-		<div class="search__filter">
-			<h3 class="search__title">Цена</h3>
-
-			<ul class="search__options">
-				<li><label for="#"><input type="radio" name="" id="">0-550</label></li>
-				<li><label for="#"><input type="radio" name="" id="">551-1000</label></li>
-				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
-				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
-			</ul>
-			<a class="search__showall" href='#'>показать все</a>
-		</div>
-		<!-- end filter -->
-		<div class="search__submit">ПОЛНЫЙ КАТАЛОГ</div>
-	</div>
-</div>
-<!-- end search -->
 
 
 <!-- begin page  -->
