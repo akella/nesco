@@ -1,0 +1,73 @@
+
+.page
+	padding: 0 0 60px 0 
+	@extend %in
+.h2
+	background: #F56541
+	font-size: 12px  
+	text-transform: uppercase
+	font-weight: normal
+	height: 60px 
+	line-height: 60px
+	padding-left: 70px  
+	color: #fff 
+	margin-bottom: 18px 
+
+
+.b
+	margin-bottom: 50px 
+.more
+	font-size: 14px 
+	text-decoration: none
+	color: #AF0A4E
+	display: inline-block
+	clear: both
+	padding-top: 22px  
+	text-transform: lowercase
+.offers
+	+clr
+.offer
+	width: 345px 
+	height: 345px 
+	float: left
+	overflow: hidden
+	position: relative
+	margin-left: 40px 
+	text-decoration: none
+	color: #fff
+	img
+		display: block
+	&:first-child
+		margin-left: 0 
+	&__text
+		position: absolute
+		top: 345px 
+		left: 0
+		right: 0
+		height: 345px  - 35px   
+		background: rgba(#000, .8) 
+		z-index: 10 
+		padding: 35px 25px 0 35px 
+		+transition(all .2s ease-in-out)
+		color: #fff 
+		opacity: .4 
+	&__year
+		font-size: 36px 
+		color: #fff
+		margin-bottom: 20px  
+	&__title
+		font-size: 36px 
+		color: #FC4A27
+		line-height: 1 
+		font-weight: normal 
+	&__more
+		font-size: 20px 
+		color: #fff 
+		line-height: 1.2 
+	&__type
+		font-size: 21px 
+		margin-top: 25px 
+	&:hover
+		.offer__text
+			top: 0
+			opacity: 1 

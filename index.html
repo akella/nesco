@@ -1,0 +1,310 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+</head>
+<body>
+@todo
+	1) top screen?
+	2) scrolling of the filters - they do not fit on screen
+	3) site width - ?
+<!-- begin top  -->
+<div class="top">
+
+	<!-- begin header  -->
+	<div class="header">
+		<div class="header__in">
+			<a href='#' class="header__logo"><i></i></a>
+			<ul class="header__nav">
+				<li><a href="#" class="is-active">ГЛАВНАЯ</a></li>
+				<li><a href="#">О ПРОЕКТЕ</a></li>
+				<li><a href="#">КАТАЛОГ</a></li>
+				<li><a href="#">ПРОИЗВОДИТЕЛИ</a></li>
+				<li><a href="#">КОНТАКТЫ</a></li>
+			</ul>
+			<!-- begin header__right  -->
+			<div class="header__right">
+				<div class="searchicon"></div>
+				<a href="#" class="login">ВХОД</a>
+				<div class="lang">
+					<a href="#" class="lang__en is-active"></a>	
+					<a href="#" class="lang__ru"></a>	
+				</div>
+			</div>
+			<!-- end header__right -->
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- begin superslider  -->
+	<div class="superslider">
+		<div class="superslider__slides">
+			<!-- begin slide -->
+			<div class="superslider__slide" style="background: url(img/bg.jpg);">
+				<div class="superslider__text">
+					<span>Винодельческий дом</span>
+					ЧЕЗАРИ
+				</div>
+			</div>
+			<!-- end slide -->
+			<!-- begin slide -->
+			<div class="superslider__slide" style="background: url(img/bg.jpg);">
+				<div class="superslider__text">
+					<span>Винодельческий дом</span>
+					ЧЕЗАРИ
+				</div>
+			</div>
+			<!-- end slide -->
+		</div>
+		<!-- end slides -->
+		<div class="superslider__next"></div>
+		<div class="superslider__prev"></div>
+		<div class="superslider__playpause"></div>
+		<div class="superslider__pagi"><a href="#"></a><a href="#"></a></div>
+	</div>
+	<!-- end superslider -->
+
+	<!-- begin logoslider  -->
+	<div class="logoslider">
+		<div class="logoslider__slides"></div>
+		<div class="logoslider__next"></div>
+		<div class="logoslider__prev"></div>
+	</div>
+	<!-- end logoslider -->
+
+</div>
+<!-- end top -->
+
+
+<!-- begin search  -->
+<div class="search">
+	<ul class="search__switcher">
+		<li><a href="#" class="is-active">Вино</a></li>
+		<li><a href="#">Крепкий алкоголь</a></li>
+	</ul>
+	<div class="search__filters">
+		<!-- begin filter -->
+		<div class="search__filter">
+			<h3 class="search__title">Страна</h3>
+
+			<ul class="search__options">
+				<li><label for="#"><input type="radio" name="" id="">Италия</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Франция</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Испания</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Чили</label></li>
+				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+			</ul>
+			<a class="search__showall" href='#'>показать все</a>
+		</div>
+		<!-- end filter -->
+
+		<!-- begin filter -->
+		<div class="search__filter">
+			<h3 class="search__title">Регион</h3>
+
+			<ul class="search__options">
+				<li><label for="#"><input type="radio" name="" id="">Бордо</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Долина бла</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Долина бле</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Долина блю</label></li>
+				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+			</ul>
+			<a class="search__showall" href='#'>показать все</a>
+		</div>
+		<!-- end filter -->
+
+		<!-- begin filter -->
+		<div class="search__filter">
+			<h3 class="search__title">Категория</h3>
+
+			<ul class="search__categ">
+				<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>белые</span></label></li>
+				<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Красные</span></label></li>
+				<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Розовые</span></label></li>
+				<li><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Игристые</span></label></li>
+				<li class="is-hidden"><label for="#"><i class="search__categicon1"></i><input type="radio" name="" id=""><span>Игристые</span></label></li>
+			</ul>
+			<a class="search__showall" href='#'>показать все</a>
+		</div>
+		<!-- end filter -->
+
+		<!-- begin filter -->
+		<div class="search__filter">
+			<h3 class="search__title">Производитель</h3>
+
+			<ul class="search__options">
+				<li><label for="#"><input type="radio" name="" id="">Люсьен</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Лосьон</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Большая Арнаутская</label></li>
+				<li><label for="#"><input type="radio" name="" id="">Парень из соседнего парадного</label></li>
+				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+			</ul>
+			<a class="search__showall" href='#'>показать все</a>
+		</div>
+		<!-- end filter -->
+
+		<!-- begin filter -->
+		<div class="search__filter">
+			<h3 class="search__title">Цена</h3>
+
+			<ul class="search__options">
+				<li><label for="#"><input type="radio" name="" id="">0-550</label></li>
+				<li><label for="#"><input type="radio" name="" id="">551-1000</label></li>
+				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Испания</label></li>
+				<li class="is-hidden"><label for="#"><input type="radio" name="" id="">Чили</label></li>
+			</ul>
+			<a class="search__showall" href='#'>показать все</a>
+		</div>
+		<!-- end filter -->
+		<div class="search__submit">ПОЛНЫЙ КАТАЛОГ</div>
+	</div>
+</div>
+<!-- end search -->
+
+
+<!-- begin page  -->
+<div class="page">
+	
+	<!-- begin b  -->
+	<div class="b">
+		<h2 class="h2">ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</h2>
+		<!-- begin offers  -->
+		<div class="offers">
+			<!-- begin offer  -->
+			<a href='#' class="offer">
+				<div class="offer__img">
+					<img src="img/offer.jpg" alt="">
+				</div>
+				<div class="offer__text">
+					<div class="offer__year">2011</div>
+					<h3 class="offer__title">Montefiore
+					Пино Гриджио</h3>
+					<div class="offer__more">делле Венецие IGT
+					Montefiore Pinot Grigio delle Venezie IGT</div>
+					<div class="offer__type">полусухое</div>
+				</div>
+			</a>
+			<!-- end offer -->
+			<!-- begin offer  -->
+			<a href='#' class="offer">
+				<div class="offer__img">
+					<img src="img/offer.jpg" alt="">
+				</div>
+				<div class="offer__text">
+					<div class="offer__year">2011</div>
+					<h3 class="offer__title">Montefiore
+					Пино Гриджио</h3>
+					<div class="offer__more">делле Венецие IGT
+					Montefiore Pinot Grigio delle Venezie IGT</div>
+					<div class="offer__type">полусухое</div>
+				</div>
+			</a>
+			<!-- end offer -->
+			<!-- begin offer  -->
+			<a href='#' class="offer">
+				<div class="offer__img">
+					<img src="img/offer.jpg" alt="">
+				</div>
+				<div class="offer__text">
+					<div class="offer__year">2011</div>
+					<h3 class="offer__title">Montefiore
+					Пино Гриджио</h3>
+					<div class="offer__more">делле Венецие IGT
+					Montefiore Pinot Grigio delle Venezie IGT</div>
+					<div class="offer__type">полусухое</div>
+				</div>
+			</a>
+			<!-- end offer -->
+		</div>
+		<!-- end offers -->
+		<a href="#" class="more">Показать все</a>
+	</div>
+	<!-- end b -->
+
+	<!-- begin b  -->
+	<div class="b">
+		<h2 class="h2">Новости</h2>
+		<!-- begin entries  -->
+		<div class="entries">
+			<!-- begin entry  -->
+			<a href='#' class="entry entry_big">
+				<div class="entry__img">
+					<img src="img/entrybig.jpg" alt="">
+				</div>
+				<div class="entry__text">
+					<h3 class="entry__title">Большой заголовок последней новости JOIA
+	на две строки 04.04.2014</h3>
+				</div>
+			</a>
+			<!-- end entry -->
+			<!-- begin entry  -->
+			<a href="#" class="entry">
+				<div class="entry__img">
+					<img src="img/entry.jpg" alt="">
+				</div>
+				<div class="entry__text">
+					<h3 class="entry__title">Малый заголовок последней новости JOIA на три строки 04.04.2014</h3>
+				</div>
+			</a>
+			<!-- end entry -->
+			<!-- begin entry  -->
+			<a href='#' class="entry">
+				<div class="entry__img">
+					<img src="img/entry.jpg" alt="">
+				</div>
+				<div class="entry__text">
+					<h3 class="entry__title">Малый заголовок последней новости JOIA на три строки 04.04.2014</h3>
+				</div>
+			</a>
+			<!-- end entry -->
+		</div>
+		<!-- end entries -->
+		<a href="#" class="more">Показать все</a>
+	</div>
+	<!-- end b -->
+</div>
+<!-- end page -->
+
+
+<!-- begin footer  -->
+<div class="footer">
+	<div class="footer__in">
+		<h3 class="footer__logo">История в бокале</h3>
+		<div class="footer__nav">
+			<ul>
+				<li><a href="#">ГЛАВНАЯ</a></li>
+				<li><a href="#">О ПРОЕКТЕ</a></li>
+				<li><a href="#">КАТАЛОГ</a></li>
+				<li><a href="#">ПРОИЗВОДИТЕЛИ</a></li>
+			</ul>
+		</div>
+		<!-- end footer nav -->
+		<!-- begin footer__contacts  -->
+		<div class="footer__contacts">
+			<h4>КОНТАКТЫ</h4>
+			<p>Россия, 195248,<br>
+			Санкт-Петербург<br>
+			ул. Партизанская, 27<br>
+			тел.: +7 812 676 9800<br>
+			факс: +7 812 676 9801</p>
+		</div>
+		<!-- end footer__contacts -->
+	</div>
+</div>
+<!-- end footer -->
+<!-- begin warning  -->
+<div class="warning">
+	
+</div>
+<!-- end warning -->
+
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

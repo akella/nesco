@@ -1,0 +1,47 @@
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	min-width: 1400px  
+	height: 77px   
+	background: #fff 
+	z-index: 500 
+	.header__in	
+		@extend %in
+		position: relative
+	&__logo
+		width: 176px 
+		position: absolute
+		top: 0
+		left: 0
+		width: 176px   
+		height: 176px
+		background: #040707 
+		border-bottom-left-radius: 10px 
+		border-bottom-right-radius: 10px 
+		box-shadow: 0 0 10px #000
+		i
+			left: 31px 
+			top: 25px 
+			position: absolute
+			+s(logo)
+	&__nav
+		list-style: none
+		position: absolute
+		left: 224px 
+		top: 0
+		font-weight: 400  
+		li
+			float: left
+		a
+			float: left
+			height: 77px
+			line-height: 77px 
+			font-size: 17px  
+			text-transform: uppercase
+			text-decoration: none
+			margin-right: 50px 
+			color: #383838
+			&.is-active
+				color: #FC4A27 

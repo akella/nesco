@@ -1,0 +1,43 @@
+.warning
+	height: 106px  
+	background: #B2B2B2 url(../img/warning.png) no-repeat 50% 50% 
+
+
+.footer
+	background: #343434
+	text-align: center
+	.footer__in
+		@extend %in
+		padding: 57px 0 81px 0 
+	.footer__logo
+		+s(footer)
+		+hide-text
+		margin: 0 auto
+		display: block 
+		margin-bottom: 31px 
+	.footer__nav
+		border-left: 2px solid #F56541 
+		min-height: 130px 
+		padding-left: 20px 
+		width: 360px 
+		display: inline-block
+		color: #8C8C8C
+		font-size: 17px 
+		text-align: left
+		vertical-align: top
+		position: relative
+		left: 100px 
+		ul
+			list-style: none
+		a
+			color: #8C8C8C 
+			text-decoration: none
+	.footer__contacts
+		@extend .footer__nav
+		font-size: 13px 
+		h4
+			font-size: 17px 
+			font-weight: normal
+			margin-bottom: 10px
+		
+	
