@@ -25,12 +25,25 @@ body { font-size: 12px; font-family: "Myriad Pro", Arial, sans-serif; line-heigh
 
 .header { position: fixed; top: 0; left: 0; right: 0; min-width: 1400px; height: 77px; background: white; z-index: 500; }
 .header .header__in { position: relative; }
-.header__logo { width: 176px; position: absolute; top: 0; left: 0; width: 176px; height: 176px; background: #040707; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; box-shadow: 0 0 10px black; }
-.header__logo i { left: 31px; top: 25px; position: absolute; background: url('../img/icons-sc02038f720.png') 0 -293px no-repeat; width: 115px; height: 122px; }
-.header__nav { list-style: none; position: absolute; left: 224px; top: 0; font-weight: 400; }
+.header__logo { width: 176px; position: absolute; top: 0; left: 90px; width: 176px; height: 176px; background: #040707; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; box-shadow: 0 0 10px black; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; overflow: hidden; }
+.header__logo i { left: 31px; top: 25px; position: absolute; background: url('../img/icons-s149e046a01.png') 0 -328px no-repeat; width: 115px; height: 122px; }
+.is-nottop .header__logo { left: 0; width: 77px; height: 77px; overflow: hidden; border-radius: 0; }
+.is-nottop .header__logo i { background: url('../img/icons-s149e046a01.png') 0 -522px no-repeat; width: 55px; height: 46px; position: absolute; top: 16px; left: 9px; }
+.header__nav { list-style: none; position: absolute; left: 296px; top: 0; font-weight: 400; -moz-transition: left 0.2s linear; -o-transition: left 0.2s linear; -webkit-transition: left 0.2s linear; transition: left 0.2s linear; }
+.is-nottop .header__nav { left: 150px; }
 .header__nav li { float: left; }
 .header__nav a { float: left; height: 77px; line-height: 77px; font-size: 17px; text-transform: uppercase; text-decoration: none; margin-right: 50px; color: #383838; }
 .header__nav a.is-active { color: #fc4a27; }
+.header__right { position: absolute; right: 0; top: 28px; text-align: right; }
+.header .lang { display: inline-block; margin-left: 30px; }
+.header .lang a { display: inline-block; opacity: 0.3; margin: 0 5px; vertical-align: middle; }
+.header .lang a.is-active, .header .lang a:hover { opacity: 1; }
+.header .lang .lang__en { background: url('../img/icons-s149e046a01.png') 0 -30px no-repeat; width: 26px; height: 25px; }
+.header .lang .lang__ru { background: url('../img/icons-s149e046a01.png') 0 -460px no-repeat; width: 22px; height: 22px; }
+.header .login { display: inline-block; vertical-align: middle; position: relative; top: 1px; margin-left: 24px; }
+.header .searchicon { background: url('../img/icons-s149e046a01.png') 0 -492px no-repeat; width: 20px; height: 20px; display: inline-block; vertical-align: middle; cursor: pointer; }
+
+.btn, .header .login { font-size: 12px; text-transform: uppercase; color: white; background: #f56541; box-shadow: 0 4px 10px rgba(245, 101, 65, 0.4); height: 22px; text-decoration: none; line-height: 22px; padding: 0 20px; }
 
 .page { padding: 0 0 60px 0; }
 
@@ -72,7 +85,7 @@ body { font-size: 12px; font-family: "Myriad Pro", Arial, sans-serif; line-heigh
 
 .footer { background: #343434; text-align: center; }
 .footer .footer__in { padding: 57px 0 81px 0; }
-.footer .footer__logo { background: url('../img/icons-sc02038f720.png') 0 -30px no-repeat; width: 868px; height: 253px; font: 0/0 a; text-shadow: none; color: transparent; margin: 0 auto; display: block; margin-bottom: 31px; }
+.footer .footer__logo { background: url('../img/icons-s149e046a01.png') 0 -65px no-repeat; width: 868px; height: 253px; font: 0/0 a; text-shadow: none; color: transparent; margin: 0 auto; display: block; margin-bottom: 31px; }
 .footer .footer__nav, .footer .footer__contacts { border-left: 2px solid #f56541; min-height: 130px; padding-left: 20px; width: 360px; display: inline-block; color: #8c8c8c; font-size: 17px; text-align: left; vertical-align: top; position: relative; left: 100px; }
 .footer .footer__nav ul, .footer .footer__contacts ul { list-style: none; }
 .footer .footer__nav a, .footer .footer__contacts a { color: #8c8c8c; text-decoration: none; }
