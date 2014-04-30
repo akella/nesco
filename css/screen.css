@@ -21,9 +21,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-size: 12px; font-family: "Myriad Pro", Arial, sans-serif; line-height: 1.4; }
 
-.header .header__in, .page, .superslider__in, .logoslider__in, .footer .footer__in { width: 1400px; margin: 0 auto; }
+.header .header__in, .page, .superslider__in, .superslider__text, .logoslider__in, .footer .footer__in { width: 1400px; margin: 0 auto; }
 
-.header { position: fixed; top: 0; left: 0; right: 0; min-width: 1400px; height: 77px; background: white; z-index: 500; }
+.header { position: fixed; top: 0; left: 0; right: 0; min-width: 1400px; height: 77px; background: white; z-index: 5000; }
 .header .header__in { position: relative; }
 .header__logo { width: 176px; position: absolute; top: 0; left: 90px; width: 176px; height: 176px; background: #040707; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; box-shadow: 0 0 10px black; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; overflow: hidden; }
 .header__logo i { left: 31px; top: 25px; position: absolute; background: url('../img/icons-sf1fedc5db7.png') 0 -372px no-repeat; width: 115px; height: 122px; }
@@ -110,6 +110,8 @@ body { font-size: 12px; font-family: "Myriad Pro", Arial, sans-serif; line-heigh
 .superslider__pagi a.cycle-pager-active { background: #999999; }
 .superslider__playpause { position: absolute; right: 280px; bottom: 30px; background: url('../img/icons-sf1fedc5db7.png') 0 -622px no-repeat; width: 15px; height: 22px; cursor: pointer; }
 .superslider__playpause:active { bottom: 28px; }
+.superslider__text { position: absolute; margin-left: -700px; left: 50%; bottom: 30px; color: white; line-height: 1; font-size: 100px; text-shadow: -5px 0 5px rgba(0, 0, 0, 0.5); }
+.superslider__text span { font-size: 20px; display: block; }
 
 .logoslider { position: relative; margin-bottom: 14px; }
 .logoslider img { -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); filter: gray; filter: grayscale(100%); }
