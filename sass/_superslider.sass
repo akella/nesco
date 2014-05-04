@@ -20,11 +20,15 @@
 		bottom: 40vh
 		right: 280px 
 		cursor: pointer 
+		.b-catalog &
+			right: 0 
 	&__pagi
 		position: absolute
 		bottom: 30px 
 		right: 300px 
 		text-align: right
+		.b-catalog & 
+			right: 20px 
 		a
 			width: 10px 
 			height: 10px 
@@ -40,6 +44,8 @@
 		bottom: 30px 
 		+s(pause)
 		cursor: pointer
+		.b-catalog &
+			right: 0 
 		&:active
 			bottom: 28px 
 	&__text
@@ -60,12 +66,14 @@
 .logoslider
 	position: relative
 	margin-bottom: 14px 
+	margin-top: 12px 
 	img
 		-webkit-filter: grayscale(1)
 		-webkit-filter: grayscale(100%)
 		-moz-filter: grayscale(100%)
 		filter: gray 
 		filter: grayscale(100%)
+		margin-right: 15px 
 		&:hover
 			-webkit-filter: grayscale(0)
 			-webkit-filter: grayscale(0%)
@@ -78,16 +86,24 @@
 	&__slides
 		margin: 0 40px 
 		width: 1050px 
+		.b-catalog &
+			width: 1313px 
 	&__prev
 		+s(prev1)
 		position: absolute
 		top: 30px 
 		left: 0 
 		cursor: pointer
+		.b-catalog &
+			top: 15px 
 	&__next
 		+s(next1)
 		position: absolute
 		left: 1110px 
 		cursor: pointer
 		top: 30px  
-
+		.b-catalog &
+			left: auto 
+			right: 0
+			top: 15px 
+	 

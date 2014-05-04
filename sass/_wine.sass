@@ -1,0 +1,83 @@
+.wine
+	border-radius: 10px
+	margin: 17px 0  20px 0
+	+g(#fff,#E6E7E8) 
+	box-shadow: 0 5px 14px rgba(#000, .4) 
+	+clr
+	padding: 13px 0
+	height: 224px  -13px -13px
+	font-size: 16px 
+	color: #383838 
+	position: relative
+	.wine__info
+		position: absolute
+		+s(i)
+		+hide-text
+		top: -7px 
+		right: 49px 
+		display: none
+	.wine__check
+		position: absolute
+		top: -7px 
+		right: -5px 
+		+s(check)
+
+	&.is-selected
+		background: #F9E4DE 
+		.wine__check
+			+s(checked)
+		.wine__info
+			display: block
+	p
+		margin-bottom: 1em 
+	.wine__pic
+		float: left
+		width: 215px 
+		text-align: center
+	.wine__text
+		width: 433px 
+		float: left
+		padding-top: 11px 
+		h2
+			font-size: 30px 
+			font-weight: normal
+			color: #B00A4E
+			line-height: 1.1
+			margin-bottom: 15px  
+	.wine__from	
+		float: left
+		width: 217px  - 100px
+		padding-right: 100px  
+		padding-top: 11px 
+	.wine__type
+		width: 292px - 100px
+		padding-right: 100px 
+		float: left
+		padding-top: 11px 
+	.wine__price
+		+s(price)
+		position: absolute
+		right: 113px 
+		bottom: 30px 
+		color: #fff 
+		font-size: 30px 
+		font-weight: normal
+		padding-left: 15px 
+		line-height: 60px 
+		+box
+	.wine__color
+		+clr
+		margin-bottom: 1em 
+		i
+			float: left
+			margin-right: 17px 
+			position: relative
+			top: 3px 
+			&.color1
+				+s(green)
+			&.color2
+				+s(red)
+			&.color3
+				+s(pink)
+			&.color4
+				+s(yellow)

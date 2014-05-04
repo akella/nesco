@@ -48,6 +48,7 @@
 			text-align: center
 			line-height: 1 
 			border-top-right-radius: 10px 
+
 	&__filter
 		width: 167px - 24px
 		padding-left: 24px 
@@ -55,6 +56,12 @@
 		padding-bottom: 12px 
 		margin: 0 auto
 		border-bottom: 1px solid #999  
+		
+		.b-catalog &
+			float: left
+			width: 193px - 24px
+			margin-top: 33px 
+			padding-top: 12px 
 		&.is-last
 			border-bottom: none
 			padding-bottom: 0  
@@ -106,6 +113,7 @@
 		i
 			display: block
 			margin: 0 auto 5px auto
+			min-height: 38px 
 		.search__categicon1
 			+s(green)
 		.search__categicon2
@@ -114,4 +122,99 @@
 			+s(pink)
 		.search__categicon4
 			+s(yellow)
-			
+	&.search_wide
+		.search__switcher
+			.search__switcher1
+				border-radius: 0 
+			.search__switcher2
+				border-radius: 0 
+				height: 86px 
+				line-height: 86px 
+				padding-top: 0 
+		.search__categ
+			li
+				width: 70px 
+				vertical-align: top
+		.search__filter
+			border-bottom: none 
+			position: relative
+			padding-left: 27px 
+			min-height: 156px - 12px 
+			&:before
+				position: absolute
+				content: ' '
+				right: 0
+				top: 0
+				height: 156px   
+				border-right: 1px solid #999 
+			&.is-last
+				&:before
+					display: none
+			&.search__filter1
+				padding-left: 0
+				margin-left: 70px  
+				width: 197px 
+			&.search__filter2
+				width: 215px - 27px
+			&.search__filter3
+				width: 432px - 27px
+				.search__showall
+					display: none
+			&.search__filter4
+				width: 217px - 27px
+			&.search__filter5
+				width: 217px - 27px
+			.search__showall
+				margin-top: 6px 
+		.search__input
+			padding: 20px 52px 20px 66px
+			position: relative
+			font-size: 0 
+			input
+				border: 1px solid #B2B2B2 
+				padding: 4px 10px 
+				height: 33px - 2px - 8px
+				line-height: 33px
+				width: 1210px 
+				display: inline-block
+				vertical-align: top
+				font-size: 14px 
+			.search__inputicon
+				text-decoration: none
+				display: inline-block
+				vertical-align: top
+				+hide-text
+				+s(searchicon)
+				right: 0
+				top: 0  
+		.search__reset
+			text-align: right
+			padding-top: 12px 
+			margin-bottom: 15px 
+			padding-right: 90px 
+			a
+				color: #B00A4E
+				font-size: 16px 
+				text-decoration: none
+				border-bottom: 1px solid #B00A4E  
+				padding-bottom: 2px 
+		.search__pdf
+			text-align: right
+			color: #B00A4E
+			font-size: 16px 
+			padding-right: 90px 
+			a
+				color: #B00A4E
+				text-decoration: none 
+			i
+				display: inline-block
+				+s(pdf)
+				margin-right: 10px 
+				vertical-align: middle
+			span
+				border-bottom: 1px solid #B00A4E  
+				padding-bottom: 2px 
+				display: inline-block
+				vertical-align: middle
+.clr
+	+clr

@@ -1,5 +1,7 @@
 head.ready(function() {
-
+	$('.wine').click(function(event) {
+		$(this).toggleClass('is-selected');
+	});
 	$(window).scroll(function(){
 		t = $(this).scrollTop();
 		b = $('body');

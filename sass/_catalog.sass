@@ -1,0 +1,42 @@
+.b-catalog
+	.search
+		position: static
+		width: auto 
+		margin-bottom: 52px 
+		box-shadow: 0 10px 15px rgba(#000, .4)
+	.search__filters
+		+clr
+.filters
+	font-size: 16px 
+	color: #3D3D3D
+	position: relative
+	padding-left: 55px 
+	span
+		display: inline-block
+		vertical-align: middle
+		margin-left: 5px 
+	i
+		+s(delete)
+		display: inline-block
+		vertical-align: middle
+		margin: 0 4px 
+		cursor: pointer
+.view
+	list-style: none
+	float: right
+	text-align: right
+	position: relative
+	z-index: 10 
+	top: -5px 
+	a
+		display: inline-block
+		vertical-align: middle
+		height: 36px 
+		line-height: 36px
+		padding: 0 30px
+		font-size: 16px   
+		text-decoration: none
+		color: #383838 
+		&.is-active
+			color: #fff
+			background: #F56541  
