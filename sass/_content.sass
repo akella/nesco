@@ -2,6 +2,14 @@
 .page
 	padding: 0 0 60px 0 
 	@extend %in
+	+r
+		margin-right: 286px 
+		width: auto
+	+r(w990)
+		margin-right: 0 
+	.b-catalog &
+		+r
+			margin-right: 0 
 .h2
 	background: #F56541
 	font-size: 12px  
@@ -12,6 +20,9 @@
 	padding-left: 70px  
 	color: #fff 
 	margin-bottom: 18px 
+	+r(w600)
+		text-align: center
+		padding-left: 0 
 
 
 .b
@@ -25,6 +36,8 @@
 	padding-top: 22px  
 	text-transform: lowercase
 	margin-right: 20px 
+	+r(w600)
+		margin-left:  20px
 .offers
 	+clr
 .offer
@@ -36,28 +49,42 @@
 	margin-left: 40px 
 	text-decoration: none
 	color: #fff
+	+r
+		width: 31%
+		height: auto
+		margin-left: 3.5%  
+	+r(w600)
+		width: 80%
+		margin-left: 10%
+		margin-bottom: 20px  
 	img
 		display: block
+		width: 100% 
+		
 	&:first-child
 		margin-left: 0 
+		+r(w600)
+			margin-left: 10% 
 	&__text
 		position: absolute
-		top: 345px 
+		top: 100% 
 		left: 0
 		right: 0
-		height: 345px  - 35px   
+		height: 100%   
 		background: rgba(#000, .8) 
 		z-index: 10 
-		padding: 35px 25px 0 35px 
+		padding: 0 25px 0 35px 
 		+transition(all .2s ease-in-out)
 		color: #fff 
 		opacity: .4 
-	&__year
 		font-size: 36px 
+		+r(w1200)
+			font-size: 20px 
+	&__year
 		color: #fff
 		margin-bottom: 20px  
+		padding-top: 35px 
 	&__title
-		font-size: 36px 
 		color: #FC4A27
 		line-height: 1 
 		font-weight: normal 
@@ -65,9 +92,13 @@
 		font-size: 20px 
 		color: #fff 
 		line-height: 1.2 
+		+r(w1200)
+			font-size: 13px 
 	&__type
 		font-size: 21px 
 		margin-top: 25px 
+		+r(w1200)
+			font-size: 13px 
 	&:hover
 		.offer__text
 			top: 0

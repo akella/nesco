@@ -3,6 +3,7 @@
 	&+.more
 		position: relative
 		top: -15px 
+
 .entry
 	float: left
 	width: 344px 
@@ -11,17 +12,36 @@
 	text-decoration: none
 	color: #fff 
 	margin-bottom: 24px 
+	overflow: hidden
+	&:last-child
+		float: right
+	+r
+		float: right
+		width: 31% 
+	+r(w1200)
+		width: 44% 
+		height: auto 
+		float: left
 	&.entry_big
 		width: 728px
 		height: 484px  
+		float: left
 		margin-right: 40px 
 		margin-bottom: 0 
+		+r
+			width: 63% 
+		+r(w1200)
+			width: 100% 
+			height: auto 
+			margin-right: 0
+			margin-bottom: 40px  
 		.entry__title
 			font-size: 30px 
 			line-height: 1.05 
 	&__img
 		img
 			display: block
+			width: 100% 
 	&__text
 		position: absolute
 		bottom: 0

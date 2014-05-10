@@ -1,6 +1,10 @@
 .warning
 	height: 106px  
 	background: #B2B2B2 url(../img/warning.png) no-repeat 50% 50% 
+	background-size: contain
+	max-width: 90%
+	padding-left: 5%   
+	padding-right: 5% 
 
 
 .footer
@@ -10,11 +14,15 @@
 		@extend %in
 		padding: 57px 0 81px 0 
 	.footer__logo
-		+s(footer)
+		//+s(footer)
+		width: 62% 
 		+hide-text
 		margin: 0 auto
 		display: block 
 		margin-bottom: 31px 
+		img
+			display: block
+			width: 100% 
 	.footer__nav
 		border-left: 2px solid #F56541 
 		min-height: 130px 
@@ -27,6 +35,15 @@
 		vertical-align: top
 		position: relative
 		left: 100px 
+		+r
+			width: 280px 
+			left: 50px 
+		+r(w600)
+			left: 0 
+			width: auto 
+			margin-left: 20px
+			float: none
+			display: block 
 		ul
 			list-style: none
 		a

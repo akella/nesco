@@ -3,6 +3,8 @@
 		height: 80vh
 		width: 100%  
 		background-size: cover 
+		+r(w900)
+			height: 400px 
 	&__in
 		@extend %in
 		position: relative
@@ -14,12 +16,19 @@
 		bottom: 40vh
 		left: 0  
 		cursor: pointer
+		+r(w900)
+			bottom: 150px 
+			margin-top: 20px  
 	&__next
 		+s(next)
 		position: absolute
 		bottom: 40vh
 		right: 280px 
 		cursor: pointer 
+		+r(w900)
+			right: 0 
+			bottom: 150px 
+			margin-top: 20px   
 		.b-catalog &
 			right: 0 
 	&__pagi
@@ -27,15 +36,20 @@
 		bottom: 30px 
 		right: 300px 
 		text-align: right
+		margin-right: 12px 
+		+r(w900)
+			right: 40px 
 		.b-catalog & 
 			right: 20px 
-		a
+		a,span
 			width: 10px 
 			height: 10px 
 			margin-left: 12px 
 			display: inline-block
 			border-radius: 10px 
 			border: 1px solid #999 
+			+hide-text
+			vertical-align: top
 			&.cycle-pager-active
 				background: #999999 
 	&__playpause
@@ -44,6 +58,8 @@
 		bottom: 30px 
 		+s(pause)
 		cursor: pointer
+		+r(w900)
+			right: 10px 
 		.b-catalog &
 			right: 0 
 		&:active
@@ -58,9 +74,17 @@
 		line-height: 1 
 		font-size: 100px 
 		text-shadow: -5px 0 5px rgba(#000, .5)
+		+r
+			width: 100%
+			margin-left: 0px  
+			left: 10px 
+			font-size: 70px 
 		span
 			font-size: 20px 
 			display: block
+			+r
+				font-size: 17px
+
 
 
 .logoslider
@@ -85,9 +109,14 @@
 		position: relative
 	&__slides
 		margin: 0 40px 
-		width: 1050px 
+		//width: 1050px 
+		margin: 0 306px 0 40px 
+		+r(w900)
+			margin-right: 40px 
 		.b-catalog &
-			width: 1313px 
+			margin-right: 50px 
+			+r(w900)
+				margin-right: 50px 
 	&__prev
 		+s(prev1)
 		position: absolute
@@ -99,9 +128,12 @@
 	&__next
 		+s(next1)
 		position: absolute
-		left: 1110px 
+		//left: 1110px 
+		right: 280px 
 		cursor: pointer
 		top: 30px  
+		+r(w900)
+			right: 0 
 		.b-catalog &
 			left: auto 
 			right: 0

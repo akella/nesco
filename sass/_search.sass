@@ -7,6 +7,8 @@
 	background: #FAFAFA 
 	border: 1px solid #B2B2B2 
 	padding-bottom: 23px 
+	+r(w900)
+		display: none
 	&__switcher	
 		background: #B2B2B2
 		height: 86px  
@@ -170,12 +172,14 @@
 			padding: 20px 52px 20px 66px
 			position: relative
 			font-size: 0 
+			.search__inputwrap
+				position: relative
 			input
 				border: 1px solid #B2B2B2 
-				padding: 4px 10px 
+				padding: 4px 0 4px 10px 
 				height: 33px - 2px - 8px
 				line-height: 33px
-				width: 1210px 
+				width: 100% 
 				display: inline-block
 				vertical-align: top
 				font-size: 14px 
@@ -183,9 +187,12 @@
 				text-decoration: none
 				display: inline-block
 				vertical-align: top
+				position: absolute
+				right: -10px
+				top: 0 
 				+hide-text
 				+s(searchicon)
-				right: 0
+				right: -12px
 				top: 0  
 		.search__reset
 			text-align: right

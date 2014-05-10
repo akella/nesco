@@ -7,6 +7,8 @@
 	height: 77px   
 	background: #fff 
 	z-index: 5000 
+	+r
+		min-width: 0 
 	.header__in	
 		@extend %in
 		position: relative
@@ -23,11 +25,25 @@
 		box-shadow: 0 0 10px #000
 		+transition(all .2s linear)
 		overflow: hidden
+		+r(w990)
+			left: 0 
+		+r(w600)
+			left: 0
+			width: 77px  
+			height: 77px 
+			overflow: hidden
+			box-shadow:none
+			border-radius: 0 
 		i
 			left: 31px 
 			top: 25px 
 			position: absolute
 			+s(logo)
+			+r(w600)
+				+s(smallogo)
+				position: absolute
+				top: 16px 
+				left: 9px 
 		.is-nottop &
 			left: 0
 			width: 77px  
@@ -47,6 +63,8 @@
 		top: 0
 		font-weight: 400  
 		+transition(left .2s linear)
+		+r(w990)
+			left: 200px 
 		.is-nottop &
 			left: 150px 
 		li
@@ -60,16 +78,36 @@
 			text-decoration: none
 			margin-right: 50px 
 			color: #383838
+			+r(w1200)
+				margin-right: 24px 
+				font-size: 14px 
+			+r(w990)
+				margin-right: 25px 
+				font-size: 14px 
 			&.is-active
 				color: #FC4A27 
+	ul.header__nav
+		+r(w900)
+			display: none
+	select.header__nav
+		display: none
+		top: 30px 
+		width: 200px 
+		+r(w900)
+			display: block
+		+r(w600)
+			left: 100px 
 	&__right
 		position: absolute
 		right: 0
 		top: 28px  
 		text-align: right
+		+r(w600)
+			display: none
 	.lang
 		display: inline-block
 		margin-left: 30px 
+		
 		a
 			display: inline-block
 			opacity: .3 
