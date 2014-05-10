@@ -19,7 +19,8 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-size: 12px; font-family: "Myriad Pro", Arial, sans-serif; line-height: 1.4; }
+@font-face { font-family: mr; src: url("fonts/MyriadPro-Regular.eot"); src: url("fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { font-size: 12px; font-family: mr, "Myriad Pro", Arial, sans-serif; line-height: 1.4; }
 
 .header .header__in, .page, .superslider__in, .superslider__text, .logoslider__in, .footer .footer__in { width: 1400px; margin: 0 auto; }
 @media only screen and (max-width: 1400px) { .header .header__in, .page, .superslider__in, .superslider__text, .logoslider__in, .footer .footer__in { width: 100%; } }
